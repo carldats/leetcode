@@ -31,11 +31,18 @@ public class AppTest extends TestCase {
 	 * Rigourous Test :-)
 	 */
 	public void testApp() {
-		//assertTrue("失败了",false);
+		// assertTrue("失败了",false);
 		System.out.println("testApp");
 	}
-	
+
 	public void testApp2() {
 		System.out.println("测试单元2");
+	}
+
+	public void testGetJdkInfo() {
+		String version = "JDK Version: " + System.getProperty("java.version");
+		System.out.println(version); // 判断JDK版本
+		String bit = "JDK Arch Data Model: " + System.getProperty("sun.arch.data.model") + " bit";
+		System.out.println(bit); // 判断是32位还是64位
 	}
 }
